@@ -1,0 +1,71 @@
+.fantasies {
+    position: relative;
+    background-image: url(/img/fantasies.png);
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.fantasies-container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    max-height: 864px;
+}
+
+.fantasies-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.fantasies-content {
+    padding: 80px 20px;
+}
+
+.fantasies-content__list {
+    font-size: 20px;
+    line-height: 2.55;
+    color: white;
+}
+
+.fantasies-content__item-active {
+    color: #E3B873;
+}
+
+.fantasies-content__list li:first-child > a {
+    border-bottom: 2px solid #E3B873;
+}
+
+.fantasies-gallery {
+    display: flex;
+}
+
+.fantasies-gallery__col-1 {
+    margin-top: -50px;
+}
+
+.fantasies-gallery__col-2 {
+    margin-top: -140px;
+}
+
+.fantasies-gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fantasies-gallery__item {
+    padding: 20px 0px 20px 20px;
+}
+
+@media screen and (max-width: 568px){
+    .fantasies{
+        display: none;
+    }
+}
+

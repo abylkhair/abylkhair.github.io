@@ -1,0 +1,72 @@
+/*
+    FIRST SECTION
+*/
+.hero {
+    position: relative;
+    background-image: url(../../img/screen1.png);
+    background-size: cover;
+    height: 707px;
+    padding-top: 194px;
+}
+
+.hero-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+    padding-left: 40px;
+}
+
+.hero-content {
+    max-width: 480px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero-buttons > button {
+    margin-right: 20px;
+}
+
+.hero-buttons > .button-second {
+    padding: 20px 20px;
+}
+
+
+
+@media screen and (max-width: 568px){
+    .hero {
+          padding-top: 85px;
+          height: 480px;
+          background-position: top right;
+    }
+    .hero-content {
+        font-size: 14px;
+        line-height: 135.84%;
+        padding-bottom: 50px;
+    }
+    .hero-buttons > button {
+        margin-right: 0px;
+        margin-bottom: 26px;
+    }
+    .hero-overlay {
+        height: 480px;
+    }
+}
